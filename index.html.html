@@ -9,15 +9,18 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: "SimHei", "Microsoft YaHei", "PingFang SC", sans-serif;
+            -webkit-font-smoothing: antialiased;
         }
 
         body {
-            font-family: "SimHei", "Microsoft YaHei", sans-serif;
             background: linear-gradient(135deg, #FFF8E7 0%, #FFFEF0 100%);
             min-height: 100vh;
             padding: 20px;
             position: relative;
             overflow-x: hidden;
+            font-size: 15px;
+            color: #6B5B45;
         }
 
         .container {
@@ -38,14 +41,13 @@
         }
 
         .main-title {
-            font-family: "SimHei", sans-serif;
-            font-size: 36px;
+            font-size: 32px;
             color: #FF6B35;
             margin-bottom: 12px;
+            font-weight: bold;
         }
 
         .section-title {
-            font-family: "SimHei", sans-serif;
             font-size: 20px;
             color: #FF6B35;
             margin: 24px 0 12px 0;
@@ -82,44 +84,43 @@
         .service-header {
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 8px;
+            gap: 12px;
+            margin-bottom: 12px;
             flex-shrink: 0;
         }
 
         .service-icon {
-            width: 36px;
-            height: 36px;
-            background: linear-gradient(135deg, #FFE4B5, #FFDAB9);
+            width: 44px;
+            height: 44px;
+            background: #FFB347;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
-            border: 2px solid #FFB347;
+            font-size: 22px;
+            color: white;
+            flex-shrink: 0;
         }
 
         .service-name {
             font-weight: 700;
             color: #5D4E37;
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .service-content {
             font-size: 15px;
             color: #6B5B45;
             line-height: 1.8;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             flex: 1;
-            display: flex;
-            align-items: flex-start;
         }
 
-        /* 正文内电话仅保留拨号功能，样式与正文完全一致 */
         .service-content a {
             color: inherit;
             font-weight: inherit;
             font-family: inherit;
+            font-size: inherit;
             text-decoration: none;
             letter-spacing: normal;
         }
@@ -129,9 +130,8 @@
             justify-content: space-between;
             align-items: center;
             background: rgba(255,228,181,0.3);
-            padding: 8px 12px;
-            border-radius: 10px;
-            font-size: 15px;
+            padding: 10px 16px;
+            border-radius: 12px;
             margin-top: auto;
             flex-shrink: 0;
             gap: 8px;
@@ -145,11 +145,9 @@
         }
 
         .contact-phone {
-            font-family: 'Courier New', monospace;
             font-weight: bold;
             color: #FF6B35;
-            letter-spacing: 1px;
-            font-size: 18px;
+            font-size: 20px;
             white-space: nowrap;
             text-decoration: none;
         }
@@ -164,14 +162,12 @@
             border-radius: 12px;
         }
 
-        /* 投诉建议卡片特殊样式 */
         .complaint-card {
             border-color: #FC8181;
             background: linear-gradient(135deg, #FFF5F5, #FFF);
         }
         .complaint-card .service-icon {
-            background: linear-gradient(135deg, #FED7D7, #FEB2B2);
-            border-color: #FC8181;
+            background: #FC8181;
         }
         .complaint-card .service-contact {
             background: rgba(252,129,129,0.1);
@@ -183,8 +179,8 @@
         /* 底部说明卡片 */
         .top-merged-card {
             background: #fff7ed;
-            border-radius: 2mm;
-            border: 1.5pt solid #fdba74;
+            border-radius: 12px;
+            border: 2px solid #fdba74;
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -192,26 +188,26 @@
         }
         .top-merged-body {
             flex: 1;
-            padding: 2mm;
+            padding: 16px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
         }
         .text-section {
             background: #fff;
-            border: 1.5pt solid #fdba74;
-            border-radius: 2mm;
-            padding: 2mm;
+            border: 1.5px solid #fdba74;
+            border-radius: 8px;
+            padding: 16px;
             flex: 1;
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            gap: 1mm;
+            gap: 8px;
         }
         .text-section p {
-            font-size: 16pt;
+            font-size: 15px;
             color: #78350f;
-            line-height: 1.5;
+            line-height: 1.6;
             text-indent: 2em;
             margin-bottom: 0;
         }
@@ -231,50 +227,53 @@
         /* 底部二维码卡片 */
         .bottom-qr-card {
             background: #fff7ed;
-            border-radius: 2mm;
-            border: 1.5pt solid #fdba74;
+            border-radius: 12px;
+            border: 2px solid #fdba74;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             margin-top: 16px;
         }
         .bottom-qr-title {
-            font-size: 17pt;
+            font-size: 18px;
             font-weight: 800;
             color: #7c2d12;
             text-align: center;
-            padding: 2mm;
-            letter-spacing: 2pt;
-            border-bottom: 1.5pt solid #fdba74;
+            padding: 12px;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #fdba74;
             background: #ffedd5;
             flex-shrink: 0;
         }
         .bottom-qr-body {
             flex: 1;
             display: flex;
-            padding: 2mm;
-            gap: 3mm;
+            padding: 16px;
+            gap: 16px;
             overflow: hidden;
         }
         .qr-item {
             flex: 1 1 0;
             background: #fff;
-            border-radius: 2mm;
-            border: 1.5pt solid #fdba74;
+            border-radius: 8px;
+            border: 1.5px solid #fdba74;
             overflow: hidden;
             display: flex;
             flex-direction: column;
+            align-items: center;
             min-height: 0;
+            padding: 12px;
         }
         .qr-item-header {
             background: #ea580c;
-            border-bottom: 1.5pt solid #c2410c;
-            padding: 2mm;
+            width: calc(100% + 24px);
+            margin: -12px -12px 12px -12px;
+            padding: 8px;
             text-align: center;
-            font-size: 18pt;
+            font-size: 16px;
             font-weight: 800;
             color: #fff;
-            letter-spacing: 1pt;
+            letter-spacing: 1px;
             flex-shrink: 0;
         }
         .qr-item-body {
@@ -283,28 +282,30 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 1mm;
-            padding: 2mm;
-            min-height: 0;
+            gap: 6px;
+            width: 100%;
         }
         .qr-img {
-            width: 55mm;
-            height: 55mm;
+            width: 120px;
+            height: 120px;
             object-fit: contain;
-            border-radius: 1mm;
-            border: 1.5pt dashed #ea580c;
-            flex-shrink: 0;
+            border-radius: 4px;
+            /* 恢复橙色虚线边框 */
+            border: 1.5px dashed #ea580c;
+            padding: 4px;
+            background: #fff5eb;
         }
         .qr-label {
-            font-size: 16pt;
+            font-size: 16px;
             font-weight: 700;
             color: #c2410c;
             text-align: center;
         }
         .qr-sublabel {
-            font-size: 14pt;
+            font-size: 13px;
             color: #92400e;
             text-align: center;
+            line-height: 1.5;
         }
 
         /* 打印样式 */
@@ -335,17 +336,16 @@
         @media screen and (max-width: 768px) {
             body {
                 padding: 8px;
-                font-size: 16px;
             }
             .container {
                 padding: 16px;
                 border-radius: 16px;
             }
             .main-title {
-                font-size: 28px;
+                font-size: 24px;
             }
             .section-title {
-                font-size: 22px;
+                font-size: 18px;
                 padding: 10px 12px;
             }
             .service-grid {
@@ -356,19 +356,22 @@
                 padding: 14px;
             }
             .service-name {
-                font-size: 20px;
+                font-size: 18px;
             }
             .service-content {
-                font-size: 16px;
+                font-size: 14px;
             }
             .service-contact {
                 padding: 10px 12px;
             }
-            .contact-person, .contact-phone {
-                font-size: 20px;
+            .contact-person {
+                font-size: 16px;
+            }
+            .contact-phone {
+                font-size: 18px;
             }
             .footer-info {
-                font-size: 14px;
+                font-size: 13px;
             }
             .bottom-qr-body {
                 flex-direction: column;
@@ -377,20 +380,11 @@
                 min-height: auto;
             }
             .qr-img {
-                width: 70mm;
-                height: 70mm;
-            }
-            .qr-item-header {
-                font-size: 18px;
-            }
-            .qr-label {
-                font-size: 16px;
-            }
-            .qr-sublabel {
-                font-size: 14px;
+                width: 140px;
+                height: 140px;
             }
             .text-section p {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
 
@@ -425,8 +419,8 @@
         <div class="service-grid">
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🔄</span>
-                    <span class="service-name">人事异动</span>
+                    <div class="service-icon">🔄</div>
+                    <div class="service-name">人事异动</div>
                 </div>
                 <div class="service-content">入、转、调、离、退 ；<br>全生命周期管理及流程咨询</div>
                 <div class="service-contact">
@@ -436,30 +430,30 @@
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">👥</span>
-                    <span class="service-name">职员招聘</span>
+                    <div class="service-icon">👥</div>
+                    <div class="service-name">职员招聘</div>
                 </div>
                 <div class="service-content">岗位招聘、面试安排、入职对接、招聘渠道咨询</div>
                 <div class="service-contact">
-                    <span class="contact-person">招聘专员</span>
-                    <a href="tel:15767086460" class="contact-phone">15767086460</a>
+                    <span class="contact-person">涂晓艳</span>
+                    <a href="tel:13510511026" class="contact-phone">13510511026</a>
                 </div>
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">📊</span>
-                    <span class="service-name">绩效管理</span>
+                    <div class="service-icon">📊</div>
+                    <div class="service-name">绩效管理</div>
                 </div>
                 <div class="service-content">绩效考核、绩效申诉、绩效制度咨询、绩效结果应用</div>
                 <div class="service-contact">
-                    <span class="contact-person">绩效专员</span>
-                    <a href="tel:15218290709" class="contact-phone">15218290709</a>
+                    <span class="contact-person">钟佼</span>
+                    <a href="tel:15171421197" class="contact-phone">15171421197</a>
                 </div>
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">📚</span>
-                    <span class="service-name">学习发展</span>
+                    <div class="service-icon">📚</div>
+                    <div class="service-name">学习发展</div>
                 </div>
                 <div class="service-content">公开课培训、岗位认证（传帮带导师、内部讲师、一线重点岗位认证）、培训资源等</div>
                 <div class="service-contact">
@@ -473,13 +467,13 @@
         <div class="service-grid">
             <div class="service-card complaint-card">
                 <div class="service-header">
-                    <span class="service-icon">📢</span>
-                    <span class="service-name">投诉建议</span>
+                    <div class="service-icon">📢</div>
+                    <div class="service-name">投诉建议</div>
                 </div>
                 <div class="service-content">人才发展相关服务投诉、服务质量反馈、不满意事项处理及合理化建议</div>
                 <div class="service-contact">
                     <span class="contact-person">张馨</span>
-                    <a href="tel:18814099940" class="contact-phone">18814099940</a>
+                    <a href="tel:17704066868" class="contact-phone">17704066868</a>
                 </div>
             </div>
         </div>
@@ -489,30 +483,30 @@
         <div class="service-grid">
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">👥</span>
-                    <span class="service-name">员工招聘</span>
+                    <div class="service-icon">👥</div>
+                    <div class="service-name">员工招聘</div>
                 </div>
                 <div class="service-content">内部推荐、招聘咨询、入职引导、招聘政策解读</div>
                 <div class="service-contact">
-                    <span class="contact-person">招聘专员</span>
-                    <a href="tel:15767086461" class="contact-phone">15767086461</a>
+                    <span class="contact-person">刘欣</span>
+                    <a href="tel:18126549936" class="contact-phone">18126549936</a>
                 </div>
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">⏰</span>
-                    <span class="service-name">考勤处理</span>
+                    <div class="service-icon">⏰</div>
+                    <div class="service-name">考勤处理</div>
                 </div>
                 <div class="service-content">考勤异常处理、请假审批、加班核算、考勤制度咨询</div>
                 <div class="service-contact">
-                    <span class="contact-person">考勤专员</span>
-                    <a href="tel:15220080724" class="contact-phone">15220080724</a>
+                    <span class="contact-person">倪萍</span>
+                    <a href="tel:15179326931" class="contact-phone">15179326931</a>
                 </div>
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🎓</span>
-                    <span class="service-name">员工培训</span>
+                    <div class="service-icon">🎓</div>
+                    <div class="service-name">员工培训</div>
                 </div>
                 <div class="service-content">新员工培训、技能提升培训、外部培训对接、培训档案管理</div>
                 <div class="service-contact">
@@ -522,8 +516,8 @@
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">💰</span>
-                    <span class="service-name">薪酬咨询</span>
+                    <div class="service-icon">💰</div>
+                    <div class="service-name">薪酬咨询</div>
                 </div>
                 <div class="service-content">工时、工资、个税、保险等咨询</div>
                 <div class="service-contact">
@@ -533,8 +527,8 @@
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">❤️</span>
-                    <span class="service-name">员工关系</span>
+                    <div class="service-icon">❤️</div>
+                    <div class="service-name">员工关系</div>
                 </div>
                 <div class="service-content">福利咨询（结婚/添丁/爱心基金/生日礼品等）、员工援助、建议及投诉等</div>
                 <div class="service-contact">
@@ -544,13 +538,13 @@
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🎯</span>
-                    <span class="service-name">企业文化</span>
+                    <div class="service-icon">🎯</div>
+                    <div class="service-name">企业文化</div>
                 </div>
                 <div class="service-content">企业文化活动、员工关怀、文化宣导、团队建设活动组织</div>
                 <div class="service-contact">
-                    <span class="contact-person">文化专员</span>
-                    <a href="tel:18814099947" class="contact-phone">18814099947</a>
+                    <span class="contact-person">梁芳莹</span>
+                    <a href="tel:13410896220" class="contact-phone">13410896220</a>
                 </div>
             </div>
         </div>
@@ -559,13 +553,13 @@
         <div class="service-grid">
             <div class="service-card complaint-card">
                 <div class="service-header">
-                    <span class="service-icon">📢</span>
-                    <span class="service-name">投诉建议</span>
+                    <div class="service-icon">📢</div>
+                    <div class="service-name">投诉建议</div>
                 </div>
                 <div class="service-content">员工支持相关服务投诉、服务质量反馈、不满意事项处理及合理化建议</div>
                 <div class="service-contact">
                     <span class="contact-person">徐微芬</span>
-                    <a href="tel:18814099941" class="contact-phone">18814099941</a>
+                    <a href="tel:13528892923" class="contact-phone">13528892923</a>
                 </div>
             </div>
         </div>
@@ -575,8 +569,8 @@
         <div class="service-grid">
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">📋</span>
-                    <span class="service-name">前台服务</span>
+                    <div class="service-icon">📋</div>
+                    <div class="service-name">前台服务</div>
                 </div>
                 <div class="service-content">
                     饭卡办理：入职办卡、挂失补办<br>
@@ -590,8 +584,8 @@
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">✈️</span>
-                    <span class="service-name">差旅服务</span>
+                    <div class="service-icon">✈️</div>
+                    <div class="service-name">差旅服务</div>
                 </div>
                 <div class="service-content">机票酒店预订、签证办理、出差及客户接待，机票及酒店提前5日在飞书申请</div>
                 <div class="service-contact">
@@ -599,21 +593,28 @@
                     <a href="tel:18277348505" class="contact-phone">18277348505</a>
                 </div>
             </div>
+
+            <!-- 用车申请卡片 -->
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🚗</span>
-                    <span class="service-name">用车申请</span>
+                    <div class="service-icon">🚗</div>
+                    <div class="service-name">用车申请</div>
                 </div>
-                <div class="service-content">公务用车：提前1日OA申请，司机：裴继承 <a href="tel:13797703528">13797703528</a><br>网约用车：企业滴滴、货拉拉账号申请</div>
+                <div class="service-content">
+                    公务用车：提前1日OA申请<br>
+                    网约用车：企业滴滴、货拉拉账号申请<br>
+                    司机：裴继承 <a href="tel:13797703528">13797703528</a>
+                </div>
                 <div class="service-contact">
                     <span class="contact-person">孙明慧</span>
                     <a href="tel:18277348505" class="contact-phone">18277348505</a>
                 </div>
             </div>
+
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🍱</span>
-                    <span class="service-name">包间接待</span>
+                    <div class="service-icon">🍱</div>
+                    <div class="service-name">包间接待</div>
                 </div>
                 <div class="service-content">客户包间用餐、菜单确认、接待协调<br>午餐提前1日，晚餐上午10点前申请</div>
                 <div class="service-contact">
@@ -623,8 +624,8 @@
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🏠</span>
-                    <span class="service-name">宿舍服务</span>
+                    <div class="service-icon">🏠</div>
+                    <div class="service-name">宿舍服务</div>
                 </div>
                 <div class="service-content">入住/退宿、钥匙领取、宿舍报修、水电费查询</div>
                 <div class="service-contact">
@@ -633,15 +634,16 @@
                 </div>
             </div>
 
-            <!-- 恢复原始顺序的工程维保卡片 -->
+            <!-- 工程维保卡片 -->
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🔧</span>
-                    <span class="service-name">工程维保</span>
+                    <div class="service-icon">🔧</div>
+                    <div class="service-name">工程维保</div>
                 </div>
                 <div class="service-content">
                     宿舍/办公区域设施维修、水电故障报修、零星工程、基建改造<br>
-                    电工：曾飞鹏 <a href="tel:13714087423">13714087423</a>、袁忠友 <a href="tel:13692236779">13692236779</a>
+                    电工：<br>
+                    曾飞鹏 <a href="tel:13714087423">13714087423</a>&nbsp;&nbsp;袁忠友 <a href="tel:13692236779">13692236779</a>
                 </div>
                 <div class="service-contact">
                     <span class="contact-person">杨凌飞</span>
@@ -651,8 +653,8 @@
 
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🧹</span>
-                    <span class="service-name">清洁服务</span>
+                    <div class="service-icon">🧹</div>
+                    <div class="service-name">清洁服务</div>
                 </div>
                 <div class="service-content">生产/办公/宿舍区域卫生、5S检查</div>
                 <div class="service-contact">
@@ -662,8 +664,8 @@
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🍽️</span>
-                    <span class="service-name">食堂管理</span>
+                    <div class="service-icon">🍽️</div>
+                    <div class="service-name">食堂管理</div>
                 </div>
                 <div class="service-content">餐具/食堂卫生投诉、份量不足、菜品问题</div>
                 <div class="service-contact">
@@ -673,8 +675,8 @@
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🛋️</span>
-                    <span class="service-name">固定资产</span>
+                    <div class="service-icon">🛋️</div>
+                    <div class="service-name">固定资产</div>
                 </div>
                 <div class="service-content">固定资产盘点，资产申请与报废</div>
                 <div class="service-contact">
@@ -684,8 +686,8 @@
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🚪</span>
-                    <span class="service-name">门禁管理</span>
+                    <div class="service-icon">🚪</div>
+                    <div class="service-name">门禁管理</div>
                 </div>
                 <div class="service-content">物品出厂需开放行条，部门领导签字<br>治安事件、来访管控、工衣发放/回收</div>
                 <div class="service-contact">
@@ -695,8 +697,8 @@
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">🚨</span>
-                    <span class="service-name">EHS安全</span>
+                    <div class="service-icon">🚨</div>
+                    <div class="service-name">EHS安全</div>
                 </div>
                 <div class="service-content">
                     消防、生产安全、职业健康安全、政府检查对接<br>
@@ -709,8 +711,8 @@
             </div>
             <div class="service-card">
                 <div class="service-header">
-                    <span class="service-icon">📎</span>
-                    <span class="service-name">综合服务</span>
+                    <div class="service-icon">📎</div>
+                    <div class="service-name">综合服务</div>
                 </div>
                 <div class="service-content">商务接待/行政服务</div>
                 <div class="service-contact">
@@ -724,13 +726,13 @@
         <div class="service-grid">
             <div class="service-card complaint-card">
                 <div class="service-header">
-                    <span class="service-icon">📢</span>
-                    <span class="service-name">投诉建议</span>
+                    <div class="service-icon">📢</div>
+                    <div class="service-name">投诉建议</div>
                 </div>
                 <div class="service-content">行政服务相关投诉、服务质量反馈、不满意事项处理及合理化建议</div>
                 <div class="service-contact">
                     <span class="contact-person">罗维</span>
-                    <a href="tel:18814099942" class="contact-phone">18814099942</a>
+                    <a href="tel:13790186635" class="contact-phone">13790186635</a>
                 </div>
             </div>
         </div>
@@ -756,7 +758,7 @@
                     <div class="qr-item-header">💬 援助/投诉</div>
                     <div class="qr-item-body">
                         <div class="qr-label">投诉二维码</div>
-                        <div style="background: #fff5eb; border: 1.5pt dashed #ea580c; border-radius: 1mm; width: 55mm; height: 55mm; display: flex; align-items: center; justify-content: center;">二维码<br>预留</div>
+                        <img src="投诉二维码.png" alt="援助投诉小程序码" class="qr-img">
                         <div class="qr-sublabel">一键人力资源服务</div>
                         <div class="qr-sublabel">微信扫一扫</div>
                         <div class="qr-sublabel">在线提交您的意见或诉求</div>
@@ -766,7 +768,7 @@
                     <div class="qr-item-header">🏠 住宿/就餐/维修/安全等</div>
                     <div class="qr-item-body">
                         <div class="qr-label">宿舍二维码</div>
-                        <div style="background: #fff5eb; border: 1.5pt dashed #ea580c; border-radius: 1mm; width: 55mm; height: 55mm; display: flex; align-items: center; justify-content: center;">二维码<br>预留</div>
+                        <img src="宿舍二维码.png" alt="行政服务小程序码" class="qr-img">
                         <div class="qr-sublabel">一键行政服务</div>
                         <div class="qr-sublabel">微信扫一扫</div>
                         <div class="qr-sublabel">提交各类意见与建议</div>
